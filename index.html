@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>charming - Katalog Lengkap</title>
+    <style>
+        /* Efek Scroll Halus */
+        html { scroll-behavior: smooth; }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #fba7e5; color: #444; line-height: 1.6; background-image: url('bg koleksi.jpeg'); }
+        
+        
+        header { background: #fefefe; padding: 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        header h1 { color: #f7a3de; font-size: 2.2rem; }
+        
+        nav { display: flex; justify-content: center; gap: 20px; margin-top: 10px; }
+        nav a { text-decoration: none; color: #666; font-weight: 500; padding: 5px 10px; transition: 0.3s; }
+        nav a:hover { color: #d4a373; }
+
+        section { padding: 80px 20px; max-width: 1100px; margin: auto; }
+        .section-title { text-align: center; margin-bottom: 40px; font-size: 2rem; color: #d4a373; }
+
+        /* --- ISI BERANDA --- */
+        #home { 
+            height: 90vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('foto bg.jpeg'); /* GANTI FOTO */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            margin-bottom: 0;
+            max-width: 100%;
+        }
+
+        /* --- KOLEKSI (GRID) --- */
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .card { background: #fdd9ba; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center; padding-bottom: 20px; }
+        .card img { width: 100%; height: 250px; object-fit: cover; }
+        .price { color: #d4a373; font-weight: bold; display: block; margin: 10px 0; }
+        .btn-wa { background: #ff96c7f0; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+
+        /* --- TENTANG KAMI --- */
+        #tentang { background: #fff; border-radius: 20px; padding: 60px; margin-top: 40px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .about-content { display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
+        .about-text { flex: 1; min-width: 300px; }
+
+        /* --- TESTIMONI --- */
+        .testi-container { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+        .testi-box { background: #fff; padding: 25px; border-radius: 15px; width: 300px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 5px solid #d4a373; }
+        .stars { color: #f1c40f; margin-bottom: 10px; }
+
+        footer { text-align: center; padding: 40px; background: #c9caf9; color: white; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>charming</h1>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#koleksi">Koleksi</a>
+            <a href="#tentang">Tentang Kami</a>
+            <a href="#testimoni">Testimoni</a>
+        </nav>
+    </header>
+
+    <!-- BAGIAN 1: BERANDA -->
+    <section id="home">
+        <div>
+            <h2>Kilau Estetik di Tanganmu</h2>
+            <p>Koleksi gelang handmade eksklusif untuk gaya harianmu.</p>
+            <br>
+            <a href="#koleksi" style="background: #d4a373; color: white; padding: 15px 30px; text-decoration: none; border-radius: 30px;">Mulai Belanja</a>
+        </div>
+    </section>
+
+    <!-- BAGIAN 2: KOLEKSI -->
+    <section id="koleksi">
+        <h2 class="section-title">Katalog Gelang</h2>
+        <div class="product-grid">
+            <div class="card">
+                <img src="patrick star.jpeg" alt="blue star"> <!-- GANTI FOTO -->
+                <h3>patrick star</h3>
+                <span class="price">Rp 10.000</span>
+                <a href="https://wa.me/6281212417793" class="btn-wa">Beli Sekarang</a>
+            </div>
+            <div class="card">
+                <img src="butterfly.jpeg" alt="pink star"> <!-- GANTI FOTO -->
+                <h3>butterfly</h3>
+                <span class="price">Rp 10.000</span>
+                <a href="https://wa.me/6281212417793" class="btn-wa">Beli Sekarang</a>
+            </div>
+            <!-- Tambahkan lebih banyak card jika ingin pilihan banyak -->
+        </div>
+    </section>
+
+    <!-- BAGIAN 3: TENTANG KAMI -->
+    <section id="tentang">
+        <h2 class="section-title">Tentang charming</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>charming dimulai dari hobi merangkai manik-manik sejak tahun 2022. Kami percaya bahwa setiap gelang memiliki cerita dan keunikan tersendiri. Semua produk kami dibuat menggunakan bahan premium yang tahan lama dan tidak mudah pudar.</p>
+                <br>
+                <p>📍 Lokasi: Jakarta, Indonesia</p>
+                <p>✨ Kualitas: Handmade dengan ketelitian tinggi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 4: TESTIMONI -->
+    <section id="testimoni">
+
+        <!-- FORMULIR TESTIMONI BARU -->
+<div style="margin-top: 50px; background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+    <h3 style="text-align: center; margin-bottom: 20px; color: #d4a373;">Kirim Testimoni Anda</h3>
+    <form id="formTesti" style="display: flex; flex-direction: column; gap: 15px;">
+        <input type="text" id="nama" placeholder="Nama Anda" required style="padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+        <select id="rating" style="padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+            <option value="★★★★★">Rating 5 Bintang</option>
+            <option value="★★★★">Rating 4 Bintang</option>
+            <option value="★★★">Rating 3 Bintang</option>
+        </select>
+        <textarea id="pesan" placeholder="Tulis testimoni Anda di sini..." required style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; height: 100px;"></textarea>
+        <button type="submit" style="background: #d4a373; color: white; border: none; padding: 12px; border-radius: 5px; cursor: pointer; font-weight: bold;">Kirim Testimoni</button>
+    </form>
+</div>
+        </div>
+    </section>
+
+    
+    </footer>
+
+</body>
+</html>
+  
+      </nav>
+    </header>
+    <div class="container">
+      <h2 class="section-title">Koleksi Gelang Terbaru</h2>
+      <div class="product-grid">
+        <!-- Item 1 -->
+        <div class="card">
+          <img src="blue-star.jpeg" alt="blue star" />
+          <div class="card-info">
+            <h3>blue star</h3>
+            <span class="price">Rp 10.000</span>
+            <a href="https://wa.me/6281212417793" class="btn-wa"
+              >Pesan via WhatsApp</a
+            >
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="card">
+          <img src="moon.jpeg" alt="moon" />
+          <div class="card-info">
+            <h3>moon</h3>
+            <span class="price">Rp 10.000</span>
+            <a href="https://wa.me/6281212417793" class="btn-wa"
+              >Pesan via WhatsApp</a
+            >
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="card">
+          <img src="pink-star.jpeg" alt="pink star" />
+          <div class="card-info">
+            <h3>pink star</h3>
+            <span class="price">Rp 10.000</span>
+            <a href="https://wa.me/6281212417793" class="btn-wa"
+              >Pesan via WhatsApp</a
+            >
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="card">
+          <img src="purple-star.jpeg" alt="purple star" />
+          <div class="card-info">
+            <h3>purple star</h3>
+            <span class="price">Rp 10.000</span>
+            <a href="https://wa.me/6281212417793" class="btn-wa"
+              >Pesan via WhatsApp</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>© 2026 charming Shop - Handmade with Love</p>
+    </footer>
+    <script>
+    const form = document.getElementById('formTesti');
+    const container = document.querySelector('.testi-container');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault(); // Mencegah halaman refresh
+
+        // Ambil data dari input
+        const nama = document.getElementById('nama').value;
+        const rating = document.getElementById('rating').value;
+        const pesan = document.getElementById('pesan').value;
+
+        // Buat kotak testimoni baru
+        const boxBaru = document.createElement('div');
+        boxBaru.className = 'testi-box';
+        boxBaru.innerHTML = `
+            <div class="stars">${rating}</div>
+            <p>"${pesan}"</p>
+            <br>
+            <strong>- ${nama}</strong>
+        `;
+
+        // Masukkan ke dalam daftar testimoni
+        container.appendChild(boxBaru);
+
+        // Reset form
+        form.reset();
+        alert('Terima kasih! Testimoni Anda telah ditambahkan.');
+    });
+</script>
+  </body>
+</html>
